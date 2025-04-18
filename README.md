@@ -1,12 +1,83 @@
-# React + Vite
+# 🍽️ فرم سفارش غذا با React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+پروژه‌ای ساده و کاربردی برای ثبت سفارش غذا، ساخته‌شده با React، `react-hook-form` و `Yup` جهت اعتبارسنجی اطلاعات. این فرم قابلیت ثبت چندین آیتم غذایی را با استفاده از `useFieldArray` فراهم می‌کند و پس از ارسال، فاکتور نهایی سفارش نمایش داده می‌شود.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 تکنولوژی‌ها و ابزارها
 
-## Expanding the ESLint configuration
+| ابزار/تکنولوژی         | توضیح کوتاه                     |
+|------------------------|----------------------------------|
+| ⚛️ React               | ساخت رابط کاربری SPA            |
+| 🧪 react-hook-form     | مدیریت فرم و داده‌ها            |
+| ✅ Yup                 | اعتبارسنجی ورودی‌ها             |
+| 🌀 useFieldArray        | مدیریت لیست آیتم‌ها در فرم       |
+| 💨 Tailwind CSS        | طراحی سریع و مدرن               |
+| ⚡ Vite                | بیلد سریع پروژه                  |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 ویژگی‌های پروژه
+
+- ثبت اطلاعات مشتری (نام، ایمیل و ...)
+- افزودن چند سفارش غذا به‌صورت داینامیک
+- فیلدهای قابل تنظیم: نام غذا، تعداد، توضیحات
+- اعتبارسنجی فرم با yup
+- نمایش فاکتور کامل پس از ثبت فرم
+- دکمه‌ی «سفارش جدید» برای ثبت سفارش مجدد
+
+---
+
+## 📸 پیش‌نمایش (Screenshots)
+
+
+
+
+```md
+![پیش‌نمایش فرم سفارش](./src/screenshots/Screenshot%20(3).png)
+
+![پیش‌نمایش فاکتور](./src/screenshots/Screenshot%20(1).png)
+```
+
+---
+
+## 🧪 نحوه اجرای پروژه
+
+```bash
+git clone https://github.com/MohammadBorji83/Form-on-React.git
+cd Form-on-React
+npm install
+npm run dev
+```
+
+---
+
+## 📁 ساختار پروژه
+
+```
+src/
+├── components/
+│   ├── OrderForm.jsx       # فرم ثبت سفارش
+│   ├── OrderItem.jsx       # آیتم‌های تکرار شونده
+│   └── Invoice.jsx         # فاکتور نهایی
+├── App.jsx                 # مدیریت نمایش فرم و فاکتور
+├── main.jsx                # نقطه ورود اپلیکیشن
+└── App.css                 # استایل‌ها (Tailwind)
+```
+
+---
+
+## ✨ نکات برجسته
+
+- استفاده از `useFieldArray` برای مدیریت آرایه‌ای از آیتم‌ها
+- اعتبارسنجی فرم به‌صورت داینامیک
+- طراحی واکنش‌گرا با Tailwind CSS
+- ساختار کامپوننتی تمیز و قابل توسعه
+
+---
+
+## 🙌 سازنده
+
+[محمد برجی - MohammadBorji83](https://github.com/MohammadBorji83)
+
+اگر این پروژه برات مفید بود، حتماً ⭐️ بده یا فالو کن ❤️
