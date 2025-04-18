@@ -41,7 +41,7 @@ function FoodOrderForm({ onSubmitOrder}){
     
       const { fields, append, remove } = useFieldArray({
         control,
-        name: "orders", // ✅ این فیلد اجباریه برای useFieldArray
+        name: "orders", 
       });
       const onSubmit = (data) => {
         onSubmitOrder(data);
